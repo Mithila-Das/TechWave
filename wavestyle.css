@@ -54,6 +54,10 @@ font-size: 16px;
 font-weight: 600;
 padding:12px 16px;
 cursor:pointer;
+/* animation: pulse 0.5s infinite; */
+}
+.btn:hover{
+    /* transform: scale(1.1); */
 }
 .btn-img{
     margin-bottom: -5px;
@@ -88,9 +92,15 @@ cursor:pointer;
     align-items: center; 
     background-repeat: no-repeat;
     margin-bottom: 40px;
-    /* position: relative; */
+    position: relative;
     /* display:block; */
     /* margin-right: 1px; */
+
+}
+.banner-images button{
+    position:absolute;
+    right:10px;
+    top:50px;
 }
 .img-3{
    height:200px;
@@ -160,8 +170,22 @@ cursor:pointer;
     padding:8px 16px;
     margin-left:850px;
     margin-top:-30px;
+    animation: pulse 3s ease-in-out 1s infinite alternate;
     /* position:absolute; */
 }
+@keyframes pulse{
+    from{
+        right:0;
+    }
+    to{
+        right:10px;
+    }
+}
+
+
+
+
+
 
 /* about section style */
 .about-parent{
