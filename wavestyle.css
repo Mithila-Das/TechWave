@@ -54,14 +54,13 @@ font-size: 16px;
 font-weight: 600;
 padding:12px 16px;
 cursor:pointer;
-/* animation: pulse 0.5s infinite; */
-}
-.btn:hover{
-    /* transform: scale(1.1); */
 }
 .btn-img{
     margin-bottom: -5px;
     gap:4px;
+}
+.hamburger{
+    display:none;
 }
 .nav-hr{
     border:1px solid #E5E7EB;
@@ -182,17 +181,12 @@ cursor:pointer;
     }
 }
 
-
-
-
-
-
 /* about section style */
 .about-parent{
     background-color: #1A0B2E;
     max-width: 1600px;
     margin:0 auto;
-    padding:50px 200px 120px 200px;
+    padding:50px 200px 100px 200px;
 }
 .about-content{
     width:1200px;
@@ -325,6 +319,7 @@ text-align: center;
     max-width:1600px;
     /* width:100%; */
     margin:0 auto;
+    /* -bottom:120px; */
     /* padding:120px 200px; */
 }
 .youtube-video{
@@ -337,6 +332,7 @@ text-align: center;
 .features-heading{
     font-size: 48px;
     color:#FFFFFF;
+    padding-top:100px;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -396,6 +392,7 @@ text-align: center;
     display:flex;
     flex-direction: column;
     width:100%;
+    /* padding-top: 120px; */
     /* max-width: 1600px; */
     /* justify-content: center; */
     align-items: center;
@@ -492,10 +489,113 @@ gap:8px;
     color:#FFFFFF;
 }
 
+#hide{
+    display:none;
+}
+
 
 /* mobile responsive style */
 @media screen and (max-width:576px){
-    .menu{
+    nav{
+    justify-content: space-between;
+    padding:12px 20px;
+    max-width:550px;
+    /* max-width:100%; */
+    }
+    .logo{
+        width:137px;
+    }
+    nav .menu, nav .btn{
         display:none;
     }
+    .hamburger{
+        width:24px;
+        display:block;
+    }
+
+    /* banner responsive */
+    .banner-parent{
+        background-size: cover;
+        background-position: center;
+        padding:40px 20px;
+        max-width:440px;
+        /* height:100vh; */
+    }
+    .banner-images{
+        width:200px;
+        height:200px;
+        /* margin-bottom:24px; */
+    }
+    .banner-content{
+    max-width:100%;
+    padding:0 10px;
+    }
+    .banner-heading{
+        font-size: 48px;
+    }
+
+    /* about section responsive */
+    .about-parent{
+    max-width: 570px;
+    margin:0 auto;
+    padding:40px 20px;
+    }
+    .about-content{
+    width:400px;
+    }
+    .about-heading{
+    font-size: 32px;
+    }
+    .card-parent{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:40px;
+}
+
+/* why choose techwave responsive */
+.techwave-parent{
+    padding:40px 20px;
+}
+.tech-heading{
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.tech-card-parent{
+width:100%;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+gap:16px;
+}
+.tech-card-1, .tech-card-2, .tech-card-3, .tech-card-4, .tech-card-5{
+    max-width:400px;
+}
+
+
+/* features episodes responsive */
+.features-parent{
+padding:40px 20px;
+}
+.features-heading{
+    font-size: 32px;
+    padding-top:0;
+    margin-bottom: 24px;
+}
+.features-card-parent{
+    width:100%;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:16px;
+}
+
+/* meet the host responsive */
+.host-parent{
+   display:flex;
+    flex-direction: ; 
+}
+.host-heading{
+    font-size: 32px;
+    margin-top: 60px;
+}
 }
