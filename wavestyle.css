@@ -325,7 +325,9 @@ text-align: center;
     /* padding:120px 200px; */
 }
 .youtube-video{
-    border-radius: 24px;
+    border-radius: 24px 24px 0px 0px;
+    width:380px;
+    height:315px;
 }
 /* .features-content{
     max-width:1200px;
@@ -347,11 +349,14 @@ text-align: center;
     /* margin-bottom: 120px; */
 }
 .features-card{
-    max-width:380px;
+    /* max-width:380px; */
     /* display:flex; */
     /* flex-direction: column; */
-    gap:30px;
-    background-color: #250D44;
+    /* gap:30px; */
+    width:100%;
+    /* height:215px; */
+    /* background-color: #250D44; */
+    /* background-color: white; */
     border-radius: 24px;
     box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.25);
     /* padding-top:10px; */
@@ -359,8 +364,16 @@ text-align: center;
     /* justify-content: center; */
     /* align-items: center; */
 }
+.features-card iframe{
+    width:100%;
+    height:100%;
+}
 .features-details{
     padding:24px;
+    background-color: #250D44;
+    border-radius: 0px 0px 24px 24px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-top:-10px;
 }
 .features-card img{
     width:40px;
@@ -406,7 +419,7 @@ text-align: center;
     color:#FFFFFF;
     /* max-width:1200px; */
     text-align: center;
-    margin-top: 120px;
+    margin-top: 390px;
 }
 .host-content{
     max-width: 1200px;
@@ -521,9 +534,11 @@ gap:8px;
 
     /* banner responsive */
     .banner-parent{
-        background-size: cover;
+        background-size: contain;
+        background-color: #1A0B2E;
         background-position: center;
-        padding:40px 20px;
+        gap:24px;
+        padding:10px 0;
         max-width:440px;
         /* height:100vh; */
     }
@@ -548,8 +563,7 @@ gap:8px;
     }
 
     /* about section responsive */
-    .about-parent{
-    max-width: 570px;
+    .about-parent{    
     margin:0 auto;
     padding:40px 20px;
     }
@@ -600,6 +614,17 @@ padding:40px 20px;
     display:grid;
     grid-template-columns: repeat(1, 1fr);
     gap:16px;
+}
+.features-card{
+    width:100%;
+    overflow: hidden;
+}
+.youtube-video{
+    width:100% !important;
+    height:300px !important;
+}
+.features-details{
+    padding-top:100px;
 }
 
 /* meet the host responsive */
